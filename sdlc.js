@@ -27,7 +27,6 @@ const analysisOfRequirements =
     "Further clarify features of the product and what requirements must be met to complete the project. The SDT might also create an analysis of resources to build the features in question, such as systems, labor, expenses, or other managerial aspects";
 
 
-
 const design = 
     "create a product design that meets the requirements and constraints determined in the analysis of requirements  architectural 'blueprint' that ";
 
