@@ -1,7 +1,7 @@
-///////////////////
+console.log(`///////////////////
 // Apple Orchard //
 ///////////////////
-
+`)
 /*
     The data below has been collected over the 
     last week at an apple orchard. You will be 
@@ -71,8 +71,7 @@ for (let i = 0; i < acres.length; i++) {
 //     totalAcres += pinkAcres[i];
 // }
 
-console.log("PROBLEM 1: Total Acres = " + totalAcres);
-console.log("");
+console.log("PROBLEM 1: Total Acres = " + totalAcres, '\n');
 
 // PROBLEM 2
 
@@ -94,9 +93,7 @@ let numberOfDataPoints = fujiAcres.length + galaAcres.length + pinkAcres.length;
 // Calculate the average number of acres picked per day by dividing the total number of acres by the total number of data points.
 let averageDailyAcres = totalAcres / numberOfDataPoints;
 
-console.log("PROBLEM 2: Average Daily Acres = " + averageDailyAcres);
-console.log("");
-
+console.log("PROBLEM 2: Average Daily Acres = " + averageDailyAcres, '\n');
 // PROBLEM 3
 
 /*
@@ -137,7 +134,6 @@ while (acresLeft > 0) {
 }
 
 console.log("PROBLEM 3: Days = " + days);
-console.log("");
 
 // PROBLEM 4
 
@@ -182,11 +178,11 @@ for (let i = 0; i < pinkAcres.length; i++) {
     pinkTons.push(pinkAcres[i] * 6.5);
 }
 
-console.log("PROBLEM 4:");
-console.log("   Fuji Tons = " + fujiTons);
-console.log("   Gala Tons = " + galaTons);
-console.log("   Pink Tons = " + pinkTons);
-console.log("");
+console.log(`
+PROBLEM 4
+    Fuji Tons = ${fujiTons}
+    Gala Tons = ${galaTons}
+    Pink Tons = ${pinkTons}`);
 
 // PROBLEM 5
 
@@ -232,11 +228,11 @@ for (let i = 0; i < tons.length; i++) {
     }
 }
 
-console.log("PROBLEM 5:");
-console.log("   fujiPounds = " + fujiPounds);
-console.log("   galaPounds = " + galaPounds);
-console.log("   pinkPounds = " + pinkPounds);
-console.log("");
+console.log(`
+PROBLEM 5:
+    Fuji Pounds = $${fujiPounds}
+    Gala Pounds = $${galaPounds}
+    Pink Pounds = $${pinkPounds}`);
 
 // PROBLEM 6
 
@@ -262,11 +258,11 @@ let fujiProfit = fujiPounds * fujiPrice;
 let galaProfit = galaPounds * galaPrice;
 let pinkProfit = pinkPounds * pinkPrice;
 
-console.log("PROBLEM 6:");
-console.log("   fujiProfit = " + fujiProfit);
-console.log("   galaProfit = " + galaProfit);
-console.log("   pinkProfit = " + pinkProfit);
-console.log("");
+console.log(`
+PROBLEM 6:
+    fujiProfit = ${fujiProfit}
+    galaProfit = ${galaProfit}
+    pinkProfit = ${pinkProfit}\n`);
 
 // PROBLEM 7
 
@@ -284,73 +280,17 @@ console.log("");
 
 let totalProfit = fujiProfit + galaProfit + pinkProfit;
 
-console.log("PROBLEM 7: Total Profit = $" + totalProfit);
-
+console.log("PROBLEM 7: Total Profit = $" + totalProfit, '\n');
+console.log('                              |')
+console.log("                              V" );
 
 
 
 // ascii art!
 
-// console.log(
-//     `  ______________________________________________________________________`
-// );
-// console.log(
-//     ` |.==============[_C_O_D_I_N_G___R_E_S_E_R_V_E___N_O_T_E_]=============.|`
-// );
-// console.log(
-//     ` ||%&%&%&%_    _        _ _ _   _ _  _ _ _     _       _    _  %&%&%&%&||`
-// );
-// console.log(
-//     ` ||%&.-.&/||_||_ | ||\\||||_| \\ (_ ||\\||_(_  /\\|_ |\\|V||_|)|/ |\\ %&.-.&&||`
-// );
-// console.log(
-//     ` ||&// |\\ || ||_ \\_/| ||||_|_/ ,_)|||||_,_) \\/|  ||| ||_|\\|\\_|| &// |\\%||`
-// );
-// console.log(
-//     ` ||| | | |%               ,-----,-'____'-,-----,               %| | | |||`
-// );
-// console.log(
-//     ` ||| | | |&% """"""""""  [    .-;"\`___ \`";-.    ]             &%| | | |||`
-// );
-// console.log(
-//     ` ||&\\===//                \`).'.' \`_.- \`. '.'.\`(\`  A 76355942 J  \\\\===/&||`
-// );
-// console.log(
-//     ` ||&%'-'%/1                // .' /\`     \\    \\\\                  \\%'-'%||`
-// );
-// console.log(
-//     ` ||%&%&%/ \`   d8888b       // /   \\  _  _;,    \\\\      .-"""-.  1 \`&%&%%||`
-// );
-// console.log(
-//     ` ||&%&%&    8P |) Yb     ;; (     > a  a| \\    ;;    //A\`Y A\\\\    &%&%&||`
-// );
-// console.log(
-//     ` ||&%&%|    8b |) d8     || (    ,\\   \\ |  )   ||    ||.-'-.||    |%&%&||`
-// );
-// console.log(
-//     ` ||%&%&|     Y8888P      ||  '--'/\`  -- /-'    ||    \\\\_/~\\\\_//    |&%&%||`
-// );
-// console.log(
-//     ` ||%&%&|                 ||     |\\'-.__/       ||     '-...-'     |&%&%||`
-// );
-// console.log(
-//     ` ||%%%%|                 ||    /\' |._ .|-.     ||                 |%&%&||`
-// );
-// console.log(
-//     ` ||%&%&|  A 76355942 J  /;\\ _.'   \\  } \\  '-.  /;\\                |%&%&||`
-// );
-// console.log(
-//     ` ||&%.-;               (,  '.      \\  } \`\\   \\'  ,)   ,.,.,.,.,   ;-.%&||`
-// );
-// console.log(
-//     ` ||%( | ) 1  """""""   _( \\  ;...---------.;.; / )_ \`\`\`""""""" 1 ( | )%||`
-// );
-// console.log(
-//     ` ||&%'-'==================\\\`------------------\`/=================='-'%&||`
-// );
-// console.log(
-//     ` ||%&JGS&%&%&%&%&&%&%%&) 547,170  D O L L A R S(%&%&%&&%&%&%%&%&&&%&%%&||`
-// );
-// console.log(
-//     ` '""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""`
-// );
+let encodedArt =
+    "ICBfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fCiB8Lj09PT09PT09PT09PT09W19DX09fRF9JX05fR19fX1JfRV9TX0VfUl9WX0VfX19OX09fVF9FX109PT09PT09PT09PT09LnwKIHx8JSYlJiUmJV8gICAgXyAgICAgICAgXyBfIF8gICBfIF8gIF8gXyBfICAgICBfICAgICAgIF8gICAgXyAgJSYlJiUmJSZ8fAogfHwlJi4tLiYvfHxffHxfIHwgfHxcfHx8fF98IFwgKF8gfHxcfHxfKF8gIC9cfF8gfFx8Vnx8X3wpfC8gfFwgJSYuLS4mJnx8CiB8fCYvLyB8XCB8fCB8fF8gXF8vfCB8fHx8X3xfLyAsXyl8fHx8fF8sXykgXC98ICB8fHwgfHxffFx8XF98fCAmLy8gfFwlfHwKIHx8fCB8IHwgfCUgICAgICAgICAgICAgICAsLS0tLS0sLSdfX19fJy0sLS0tLS0sICAgICAgICAgICAgICAgJXwgfCB8IHx8fAogfHx8IHwgfCB8JiUgIiIiIiIiIiIiIiAgWyAgICAuLTsiYF9fXyBgIjstLiAgICBdICAgICAgICAgICAgICYlfCB8IHwgfHx8CiB8fCZcPT09Ly8gICAgICAgICAgICAgICAgYCkuJy4nIGBfLi0gYC4gJy4nLmAoYCAgQSA3NjM1NTk0MiBKICBcXD09PS8mfHwKIHx8JiUnLSclLzEgICAgICAgICAgICAgICAgLy8gLicgL2AgICAgIFwgICAgXFwgICAgICAgICAgICAgICAgICBcJSctJyV8fAogfHwlJiUmJS8gYCAgIGQ4ODg4YiAgICAgICAvLyAvICAgXCAgXyAgXzssICAgIFxcICAgICAgLi0iIiItLiAgMSBgJiUmJSV8fAogfHwmJSYlJiAgICA4UCB8KSBZYiAgICAgOzsgKCAgICAgPiBhICBhfCBcICAgIDs7ICAgIC8vQWBZIEFcXCAgICAmJSYlJnx8CiB8fCYlJiV8ICAgIDhiIHwpIGQ4ICAgICB8fCAoICAgICxcICAgXCB8ICApICAgfHwgICAgfHwuLSctLnx8ICAgIHwlJiUmfHwKIHx8JSYlJnwgICAgIFk4ODg4UCAgICAgIHx8ICAnLS0nL2AgIC0tIC8tJyAgICB8fCAgICBcXF8vflxcXy8vICAgIHwmJSYlfHwKIHx8JSYlJnwgICAgICAgICAgICAgICAgIHx8ICAgICB8XCctLl9fLyAgICAgICB8fCAgICAgJy0uLi4tJyAgICAgfCYlJiV8fAogfHwlJSUlfCAgICAgICAgICAgICAgICAgfHwgICAgLycgfC5fIC58LS4gICAgIHx8ICAgICAgICAgICAgICAgICB8JSYlJnx8CiB8fCUmJSZ8ICBBIDc2MzU1OTQyIEogIC87XCBfLicgICBcICB9IFwgICctLiAgLztcICAgICAgICAgICAgICAgIHwlJiUmfHwKIHx8JiUuLTsgICAgICAgICAgICAgICAoLCAgJy4gICAgICBcICB9IGBcICAgXCcgICwpICAgLC4sLiwuLC4sICAgOy0uJSZ8fAogfHwlKCB8ICkgMSAgIiIiIiIiIiAgIF8oIFwgIDsuLi4tLS0tLS0tLS0uOy47IC8gKV8gYGBgIiIiIiIiIiAxICggfCApJXx8CiB8fCYlJy0nPT09PT09PT09PT09PT09PT09XGAtLS0tLS0tLS0tLS0tLS0tLS1gLz09PT09PT09PT09PT09PT09PSctJyUmfHwKIHx8JSZKR1MmJSYlJiUmJSYmJSYlJSYpIDU0NywxNzAgIEQgTyBMIEwgQSBSIFMoJSYlJiUmJiUmJSYlJSYlJiYmJSYlJSZ8fAogJyIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiI=";
+
+    let decodedArt = atob(encodedArt)
+
+console.log(decodedArt);
